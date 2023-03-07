@@ -1,27 +1,3 @@
-// import { beginCell, contractAddress, toNano } from "ton";
-// import { testAddress } from "ton-emulator";
-// import { SampleJobContract } from "./output/sample_JobContract";
-// import { deploy } from "./utils/deploy";
-// import { printAddress, printDeploy, printHeader } from "./utils/print";
-
-// (async () => {
-
-//     // Parameters
-//     let owner = testAddress('some-owner'); // Replace owner with your address
-//     let packed = beginCell().store(storeAdd({ $$type: 'fund_Project', amount: 10n })).endCell(); // Replace if you want another message used
-//     let init = await SampleJobContract.init(owner);
-//     let address = contractAddress(0, init);
-//     let deployAmount = toNano(10);
-//     let testnet = true;
-
-//     // Print basics
-//     printHeader('SampleTactContract');
-//     printAddress(address);
-//     // printDeploy(init, deployAmount, packed, testnet);
-    
-//     // Do deploy
-//     await deploy(init, deployAmount, packed, testnet)
-// })();
 
 import base64url from 'base64url';
 import qs from 'qs';
@@ -34,6 +10,8 @@ import { JobContract } from './output/DUCKAJOB_JobContract';
     let buyer = Address.parse('kQCxPXjtEBNbDeV1EbruV9FIRJsh6FUQ3Z-sE-GqDrzL6kcf');
     let dispute_resolver = Address.parse('kQAguT6dSS1u3cciZlCsG5Cn1aVnTT9tVWx-iH2uMnsRy-AP');
 
+    let contract = Address.parse("");
+   
     let init = await JobContract.init(seller, buyer, dispute_resolver, 250n);
     let testnet = true;
     

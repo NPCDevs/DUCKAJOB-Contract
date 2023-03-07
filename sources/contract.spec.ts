@@ -1,6 +1,6 @@
 import { toNano, fromNano, Cell } from "ton";
 import { ContractSystem } from "ton-emulator";
-import { JobContract } from "./output/sample_JobContract";
+import { JobContract } from "./output/DUCKAJOB_JobContract";
 
 describe("contract", () => {
 
