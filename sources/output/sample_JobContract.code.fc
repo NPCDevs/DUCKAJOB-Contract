@@ -105,14 +105,16 @@ builder __gen_write_JobContract(builder build_0, (slice, slice, slice, int, int,
     return (sc_0, (v'seller, v'buyer, v'dispute_resolver, v'funds, v'deployed_time, v'deposit_time, v'delivery_time, v'contract_status, v'max_time_to_deposit, v'max_time_to_complete, v'max_time_to_review, v'contract_price));
 }
 
-(slice, ((slice, slice, slice))) __gen_read_$init$JobContract(slice sc_0) inline {
+(slice, ((slice, slice, slice, int))) __gen_read_$init$JobContract(slice sc_0) inline {
     var v'seller = sc_0~__tact_load_address();
     var v'buyer = sc_0~__tact_load_address();
     var v'dispute_resolver = sc_0~__tact_load_address();
-    return (sc_0, (v'seller, v'buyer, v'dispute_resolver));
+    slice sc_1 = sc_0~load_ref().begin_parse();
+    var v'contract_price = sc_1~load_int(257);
+    return (sc_0, (v'seller, v'buyer, v'dispute_resolver, v'contract_price));
 }
 
-(slice, slice, slice, int, int, int, int, int, int, int, int, int) $__gen_JobContract_init(slice $seller, slice $buyer, slice $dispute_resolver) impure inline_ref {
+(slice, slice, slice, int, int, int, int, int, int, int, int, int) $__gen_JobContract_init(slice $seller, slice $buyer, slice $dispute_resolver, int $contract_price) impure inline_ref {
     var (($self'seller, $self'buyer, $self'dispute_resolver, $self'funds, $self'deployed_time, $self'deposit_time, $self'delivery_time, $self'contract_status, $self'max_time_to_deposit, $self'max_time_to_complete, $self'max_time_to_review, $self'contract_price)) = (null(), null(), null(), null(), null(), null(), null(), null(), null(), null(), null(), null());
     $self'seller = $seller;
     $self'buyer = $buyer;
@@ -125,7 +127,7 @@ builder __gen_write_JobContract(builder build_0, (slice, slice, slice, int, int,
     $self'max_time_to_deposit = 259200;
     $self'max_time_to_complete = 259200;
     $self'max_time_to_review = 259200;
-    $self'contract_price = 250;
+    $self'contract_price = $contract_price;
     return ($self'seller, $self'buyer, $self'dispute_resolver, $self'funds, $self'deployed_time, $self'deposit_time, $self'delivery_time, $self'contract_status, $self'max_time_to_deposit, $self'max_time_to_complete, $self'max_time_to_review, $self'contract_price);
 }
 
@@ -136,9 +138,9 @@ builder __gen_write_JobContract(builder build_0, (slice, slice, slice, int, int,
     if ($loaded) {
         return $sc~__gen_read_JobContract();
     } else {
-        (slice seller, slice buyer, slice dispute_resolver) = $sc~__gen_read_$init$JobContract();
+        (slice seller, slice buyer, slice dispute_resolver, int contract_price) = $sc~__gen_read_$init$JobContract();
         $sc.end_parse();
-        return $__gen_JobContract_init(seller, buyer, dispute_resolver);
+        return $__gen_JobContract_init(seller, buyer, dispute_resolver, contract_price);
     }
 }
 

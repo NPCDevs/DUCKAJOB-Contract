@@ -10,7 +10,7 @@ describe("contract", () => {
     let seller = system.treasure("seller"); // Creates wallet (seller)
     let buyer = system.treasure("buyer"); // Creates wallet (buyer)
     let dispute_resolver = system.treasure("budispute_resolveryer"); // Creates wallet (disputer)
-    let contract = system.open(await JobContract.fromInit(seller.address, buyer.address, dispute_resolver.address)); // Open contract - using contract 
+    let contract = system.open(await JobContract.fromInit(seller.address, buyer.address, dispute_resolver.address, 250n)); // Open contract - using contract 
 
     await contract.send(seller, { value: toNano(1) }, { $$type: "Deploy", queryId: 0n }); // Deploy
     await system.run(); // Execute
@@ -33,7 +33,7 @@ describe("contract", () => {
     let seller = system.treasure("seller"); // Creates wallet (seller)
     let buyer = system.treasure("buyer"); // Creates wallet (seller)
     let dispute_resolver = system.treasure("budispute_resolveryer"); // Creates wallet (disputer)
-    let contract = system.open(await JobContract.fromInit(seller.address, buyer.address, dispute_resolver.address)); // Open contract - using contract 
+    let contract = system.open(await JobContract.fromInit(seller.address, buyer.address, dispute_resolver.address, 250n)); // Open contract - using contract 
     
     await contract.send(seller, { value: toNano(1) }, { $$type: "Deploy", queryId: 0n }); // Deploy
     await system.run(); // Execute
@@ -73,7 +73,7 @@ describe("contract", () => {
     let seller = system.treasure("seller"); // Creates wallet (seller)
     let buyer = system.treasure("buyer"); // Creates wallet (seller)
     let dispute_resolver = system.treasure("budispute_resolveryer"); // Creates wallet (disputer)
-    let contract = system.open(await JobContract.fromInit(seller.address, buyer.address, dispute_resolver.address)); // Open contract - using contract 
+    let contract = system.open(await JobContract.fromInit(seller.address, buyer.address, dispute_resolver.address, 250n)); // Open contract - using contract 
     
     await contract.send(seller, { value: toNano(1) }, { $$type: "Deploy", queryId: 0n }); // Deploy
     await system.run(); // Execute
@@ -97,7 +97,7 @@ describe("contract", () => {
     let seller = system.treasure("seller"); // Creates wallet (seller)
     let buyer = system.treasure("buyer"); // Creates wallet (seller)
     let dispute_resolver = system.treasure("budispute_resolveryer"); // Creates wallet (disputer)
-    let contract = system.open(await JobContract.fromInit(seller.address, buyer.address, dispute_resolver.address)); // Open contract - using contract 
+    let contract = system.open(await JobContract.fromInit(seller.address, buyer.address, dispute_resolver.address, 250n)); // Open contract - using contract 
     
     await contract.send(seller, { value: toNano(1) }, { $$type: "Deploy", queryId: 0n }); // Deploy
     await system.run(); // Execute
@@ -126,7 +126,7 @@ describe("contract", () => {
     let seller = system.treasure("seller"); // Creates wallet (seller)
     let buyer = system.treasure("buyer"); // Creates wallet (seller)
     let dispute_resolver = system.treasure("budispute_resolveryer"); // Creates wallet (disputer)
-    let contract = system.open(await JobContract.fromInit(seller.address, buyer.address, dispute_resolver.address)); // Open contract - using contract 
+    let contract = system.open(await JobContract.fromInit(seller.address, buyer.address, dispute_resolver.address, 250n)); // Open contract - using contract 
     
     await contract.send(seller, { value: toNano(1) }, { $$type: "Deploy", queryId: 0n }); // Deploy
     await system.run(); // Execute
@@ -156,7 +156,7 @@ describe("contract", () => {
     let seller = system.treasure("seller"); // Creates wallet (seller)
     let buyer = system.treasure("buyer"); // Creates wallet (seller)
     let dispute_resolver = system.treasure("budispute_resolveryer"); // Creates wallet (disputer)
-    let contract = system.open(await JobContract.fromInit(seller.address, buyer.address, dispute_resolver.address)); // Open contract - using contract 
+    let contract = system.open(await JobContract.fromInit(seller.address, buyer.address, dispute_resolver.address, 250n)); // Open contract - using contract 
     
     await contract.send(seller, { value: toNano(1) }, { $$type: "Deploy", queryId: 0n }); // Deploy
     await system.run(); // Execute
@@ -179,7 +179,7 @@ describe("contract", () => {
     let seller = system.treasure("seller"); // Creates wallet (seller)
     let buyer = system.treasure("buyer"); // Creates wallet (seller)
     let dispute_resolver = system.treasure("budispute_resolveryer"); // Creates wallet (disputer)
-    let contract = system.open(await JobContract.fromInit(seller.address, buyer.address, dispute_resolver.address)); // Open contract - using contract 
+    let contract = system.open(await JobContract.fromInit(seller.address, buyer.address, dispute_resolver.address, 250n)); // Open contract - using contract 
     
     await contract.send(seller, { value: toNano(1) }, { $$type: "Deploy", queryId: 0n }); // Deploy
     await system.run(); // Execute
@@ -211,7 +211,7 @@ describe("contract", () => {
     let seller = system.treasure("seller"); // Creates wallet (seller)
     let buyer = system.treasure("buyer"); // Creates wallet (seller)
     let dispute_resolver = system.treasure("budispute_resolveryer"); // Creates wallet (disputer)
-    let contract = system.open(await JobContract.fromInit(seller.address, buyer.address, dispute_resolver.address)); // Open contract - using contract 
+    let contract = system.open(await JobContract.fromInit(seller.address, buyer.address, dispute_resolver.address, 250n)); // Open contract - using contract 
     
     await contract.send(seller, { value: toNano(1) }, { $$type: "Deploy", queryId: 0n }); // Deploy
     await system.run(); // Execute
@@ -233,7 +233,7 @@ describe("contract", () => {
     let seller = system.treasure("seller"); // Creates wallet (seller)
     let buyer = system.treasure("buyer"); // Creates wallet (seller)
     let dispute_resolver = system.treasure("budispute_resolveryer"); // Creates wallet (disputer)
-    let contract = system.open(await JobContract.fromInit(seller.address, buyer.address, dispute_resolver.address)); // Open contract - using contract 
+    let contract = system.open(await JobContract.fromInit(seller.address, buyer.address, dispute_resolver.address, 250n)); // Open contract - using contract 
     
     await contract.send(seller, { value: toNano(1) }, { $$type: "Deploy", queryId: 0n }); // Deploy
     await system.run(); // Execute
@@ -254,7 +254,7 @@ describe("contract", () => {
     let seller = system.treasure("seller"); // Creates wallet (seller)
     let buyer = system.treasure("buyer"); // Creates wallet (seller)
     let dispute_resolver = system.treasure("budispute_resolveryer"); // Creates wallet (disputer)
-    let contract = system.open(await JobContract.fromInit(seller.address, buyer.address, dispute_resolver.address)); // Open contract - using contract 
+    let contract = system.open(await JobContract.fromInit(seller.address, buyer.address, dispute_resolver.address, 250n)); // Open contract - using contract 
     
     await contract.send(seller, { value: toNano(1) }, { $$type: "Deploy", queryId: 0n }); // Deploy
     await system.run(); // Execute
@@ -280,7 +280,7 @@ describe("contract", () => {
     let seller = system.treasure("seller"); // Creates wallet (seller)
     let buyer = system.treasure("buyer"); // Creates wallet (seller)
     let dispute_resolver = system.treasure("budispute_resolveryer"); // Creates wallet (disputer)
-    let contract = system.open(await JobContract.fromInit(seller.address, buyer.address, dispute_resolver.address)); // Open contract - using contract 
+    let contract = system.open(await JobContract.fromInit(seller.address, buyer.address, dispute_resolver.address, 250n)); // Open contract - using contract 
     
     await contract.send(seller, { value: toNano(1) }, { $$type: "Deploy", queryId: 0n }); // Deploy
     await system.run(); // Execute
@@ -303,7 +303,7 @@ describe("contract", () => {
     let seller = system.treasure("seller"); // Creates wallet (seller)
     let buyer = system.treasure("buyer"); // Creates wallet (seller)
     let dispute_resolver = system.treasure("budispute_resolveryer"); // Creates wallet (disputer)
-    let contract = system.open(await JobContract.fromInit(seller.address, buyer.address, dispute_resolver.address)); // Open contract - using contract 
+    let contract = system.open(await JobContract.fromInit(seller.address, buyer.address, dispute_resolver.address, 250n)); // Open contract - using contract 
     
     await contract.send(seller, { value: toNano(1) }, { $$type: "Deploy", queryId: 0n }); // Deploy
     await system.run(); // Execute
@@ -324,7 +324,7 @@ describe("contract", () => {
     let seller = system.treasure("seller"); // Creates wallet (seller)
     let buyer = system.treasure("buyer"); // Creates wallet (seller)
     let dispute_resolver = system.treasure("budispute_resolveryer"); // Creates wallet (disputer)
-    let contract = system.open(await JobContract.fromInit(seller.address, buyer.address, dispute_resolver.address)); // Open contract - using contract 
+    let contract = system.open(await JobContract.fromInit(seller.address, buyer.address, dispute_resolver.address, 250n)); // Open contract - using contract 
     
     await contract.send(seller, { value: toNano(1) }, { $$type: "Deploy", queryId: 0n }); // Deploy
     await system.run(); // Execute
@@ -345,7 +345,7 @@ describe("contract", () => {
     let seller = system.treasure("seller"); // Creates wallet (seller)
     let buyer = system.treasure("buyer"); // Creates wallet (seller)
     let dispute_resolver = system.treasure("budispute_resolveryer"); // Creates wallet (disputer)
-    let contract = system.open(await JobContract.fromInit(seller.address, buyer.address, dispute_resolver.address)); // Open contract - using contract 
+    let contract = system.open(await JobContract.fromInit(seller.address, buyer.address, dispute_resolver.address, 250n)); // Open contract - using contract 
     
     await contract.send(seller, { value: toNano(1) }, { $$type: "Deploy", queryId: 0n }); // Deploy
     await system.run(); // Execute
@@ -366,7 +366,7 @@ describe("contract", () => {
     let seller = system.treasure("seller"); // Creates wallet (seller)
     let buyer = system.treasure("buyer"); // Creates wallet (seller)
     let dispute_resolver = system.treasure("budispute_resolveryer"); // Creates wallet (disputer)
-    let contract = system.open(await JobContract.fromInit(seller.address, buyer.address, dispute_resolver.address)); // Open contract - using contract 
+    let contract = system.open(await JobContract.fromInit(seller.address, buyer.address, dispute_resolver.address, 250n)); // Open contract - using contract 
     
     await contract.send(seller, { value: toNano(1) }, { $$type: "Deploy", queryId: 0n }); // Deploy
     await system.run(); // Execute
@@ -390,7 +390,7 @@ describe("contract", () => {
     let seller = system.treasure("seller"); // Creates wallet (seller)
     let buyer = system.treasure("buyer"); // Creates wallet (seller)
     let dispute_resolver = system.treasure("budispute_resolveryer"); // Creates wallet (disputer)
-    let contract = system.open(await JobContract.fromInit(seller.address, buyer.address, dispute_resolver.address)); // Open contract - using contract 
+    let contract = system.open(await JobContract.fromInit(seller.address, buyer.address, dispute_resolver.address, 250n)); // Open contract - using contract 
     
     await contract.send(seller, { value: toNano(1) }, { $$type: "Deploy", queryId: 0n }); // Deploy
     await system.run(); // Execute
@@ -414,7 +414,7 @@ describe("contract", () => {
     let seller = system.treasure("seller"); // Creates wallet (seller)
     let buyer = system.treasure("buyer"); // Creates wallet (seller)
     let dispute_resolver = system.treasure("budispute_resolveryer"); // Creates wallet (disputer)
-    let contract = system.open(await JobContract.fromInit(seller.address, buyer.address, dispute_resolver.address)); // Open contract - using contract 
+    let contract = system.open(await JobContract.fromInit(seller.address, buyer.address, dispute_resolver.address, 250n)); // Open contract - using contract 
     
     await contract.send(seller, { value: toNano(1) }, { $$type: "Deploy", queryId: 0n }); // Deploy
     await system.run(); // Execute
@@ -435,7 +435,7 @@ describe("contract", () => {
     let seller = system.treasure("seller"); // Creates wallet (seller)
     let buyer = system.treasure("buyer"); // Creates wallet (seller)
     let dispute_resolver = system.treasure("budispute_resolveryer"); // Creates wallet (disputer)
-    let contract = system.open(await JobContract.fromInit(seller.address, buyer.address, dispute_resolver.address)); // Open contract - using contract 
+    let contract = system.open(await JobContract.fromInit(seller.address, buyer.address, dispute_resolver.address, 250n)); // Open contract - using contract 
     
     await contract.send(seller, { value: toNano(1) }, { $$type: "Deploy", queryId: 0n }); // Deploy
     await system.run(); // Execute
@@ -459,7 +459,7 @@ describe("contract", () => {
     let seller = system.treasure("seller"); // Creates wallet (seller)
     let buyer = system.treasure("buyer"); // Creates wallet (seller)
     let dispute_resolver = system.treasure("budispute_resolveryer"); // Creates wallet (disputer)
-    let contract = system.open(await JobContract.fromInit(seller.address, buyer.address, dispute_resolver.address)); // Open contract - using contract 
+    let contract = system.open(await JobContract.fromInit(seller.address, buyer.address, dispute_resolver.address, 250n)); // Open contract - using contract 
     
     await contract.send(seller, { value: toNano(1) }, { $$type: "Deploy", queryId: 0n }); // Deploy
     await system.run(); // Execute
@@ -474,7 +474,7 @@ describe("contract", () => {
     let seller = system.treasure("seller"); // Creates wallet (seller)
     let buyer = system.treasure("buyer"); // Creates wallet (seller)
     let dispute_resolver = system.treasure("budispute_resolveryer"); // Creates wallet (disputer)
-    let contract = system.open(await JobContract.fromInit(seller.address, buyer.address, dispute_resolver.address)); // Open contract - using contract 
+    let contract = system.open(await JobContract.fromInit(seller.address, buyer.address, dispute_resolver.address, 250n)); // Open contract - using contract 
     
     await contract.send(seller, { value: toNano(1) }, { $$type: "Deploy", queryId: 0n }); // Deploy
     await system.run(); // Execute
@@ -499,7 +499,7 @@ describe("contract", () => {
     let seller = system.treasure("seller"); // Creates wallet (seller)
     let buyer = system.treasure("buyer"); // Creates wallet (seller)
     let dispute_resolver = system.treasure("budispute_resolveryer"); // Creates wallet (disputer)
-    let contract = system.open(await JobContract.fromInit(seller.address, buyer.address, dispute_resolver.address)); // Open contract - using contract 
+    let contract = system.open(await JobContract.fromInit(seller.address, buyer.address, dispute_resolver.address, 250n)); // Open contract - using contract 
     
     await contract.send(seller, { value: toNano(1) }, { $$type: "Deploy", queryId: 0n }); // Deploy
     await system.run(); // Execute
@@ -523,7 +523,7 @@ describe("contract", () => {
     let seller = system.treasure("seller"); // Creates wallet (seller)
     let buyer = system.treasure("buyer"); // Creates wallet (seller)
     let dispute_resolver = system.treasure("budispute_resolveryer"); // Creates wallet (disputer)
-    let contract = system.open(await JobContract.fromInit(seller.address, buyer.address, dispute_resolver.address)); // Open contract - using contract 
+    let contract = system.open(await JobContract.fromInit(seller.address, buyer.address, dispute_resolver.address, 250n)); // Open contract - using contract 
     
     await contract.send(seller, { value: toNano(1) }, { $$type: "Deploy", queryId: 0n }); // Deploy
     await system.run(); // Execute
@@ -550,7 +550,7 @@ describe("contract", () => {
     let seller = system.treasure("seller"); // Creates wallet (seller)
     let buyer = system.treasure("buyer"); // Creates wallet (seller)
     let dispute_resolver = system.treasure("budispute_resolveryer"); // Creates wallet (disputer)
-    let contract = system.open(await JobContract.fromInit(seller.address, buyer.address, dispute_resolver.address)); // Open contract - using contract 
+    let contract = system.open(await JobContract.fromInit(seller.address, buyer.address, dispute_resolver.address, 250n)); // Open contract - using contract 
     
     await contract.send(seller, { value: toNano(1) }, { $$type: "Deploy", queryId: 0n }); // Deploy
     await system.run(); // Execute
@@ -576,7 +576,7 @@ describe("contract", () => {
     let buyer = system.treasure("buyer"); // Creates wallet (seller)
     let dispute_resolver = system.treasure("budispute_resolveryer"); // Creates wallet (disputer)
     let unknown = system.treasure("unknown"); // Creates wallet (unknown)
-    let contract = system.open(await JobContract.fromInit(seller.address, buyer.address, dispute_resolver.address)); // Open contract - using contract 
+    let contract = system.open(await JobContract.fromInit(seller.address, buyer.address, dispute_resolver.address, 250n)); // Open contract - using contract 
     
     await contract.send(seller, { value: toNano(1) }, { $$type: "Deploy", queryId: 0n }); // Deploy
     await system.run(); // Execute
@@ -603,7 +603,7 @@ describe("contract", () => {
     let seller = system.treasure("seller"); // Creates wallet (seller)
     let buyer = system.treasure("buyer"); // Creates wallet (seller)
     let dispute_resolver = system.treasure("budispute_resolveryer"); // Creates wallet (disputer)
-    let contract = system.open(await JobContract.fromInit(seller.address, buyer.address, dispute_resolver.address)); // Open contract - using contract 
+    let contract = system.open(await JobContract.fromInit(seller.address, buyer.address, dispute_resolver.address, 250n)); // Open contract - using contract 
     
     await contract.send(seller, { value: toNano(1) }, { $$type: "Deploy", queryId: 0n }); // Deploy
     await system.run(); // Execute
@@ -631,7 +631,7 @@ describe("contract", () => {
     let seller = system.treasure("seller"); // Creates wallet (seller)
     let buyer = system.treasure("buyer"); // Creates wallet (seller)
     let dispute_resolver = system.treasure("budispute_resolveryer"); // Creates wallet (disputer)
-    let contract = system.open(await JobContract.fromInit(seller.address, buyer.address, dispute_resolver.address)); // Open contract - using contract 
+    let contract = system.open(await JobContract.fromInit(seller.address, buyer.address, dispute_resolver.address, 250n)); // Open contract - using contract 
     
     await contract.send(seller, { value: toNano(1) }, { $$type: "Deploy", queryId: 0n }); // Deploy
     await system.run(); // Execute
@@ -655,7 +655,7 @@ describe("contract", () => {
     let seller = system.treasure("seller"); // Creates wallet (seller)
     let buyer = system.treasure("buyer"); // Creates wallet (seller)
     let dispute_resolver = system.treasure("budispute_resolveryer"); // Creates wallet (disputer)
-    let contract = system.open(await JobContract.fromInit(seller.address, buyer.address, dispute_resolver.address)); // Open contract - using contract 
+    let contract = system.open(await JobContract.fromInit(seller.address, buyer.address, dispute_resolver.address, 250n)); // Open contract - using contract 
     
     await contract.send(seller, { value: toNano(1) }, { $$type: "Deploy", queryId: 0n }); // Deploy
     await system.run(); // Execute
@@ -676,7 +676,7 @@ describe("contract", () => {
     let buyer = system.treasure("buyer"); // Creates wallet (seller)
     let dispute_resolver = system.treasure("budispute_resolveryer"); // Creates wallet (disputer)
     let unknown = system.treasure("unknown"); // Creates wallet (unknown)
-    let contract = system.open(await JobContract.fromInit(seller.address, buyer.address, dispute_resolver.address)); // Open contract - using contract 
+    let contract = system.open(await JobContract.fromInit(seller.address, buyer.address, dispute_resolver.address, 250n)); // Open contract - using contract 
     
     await contract.send(seller, { value: toNano(1) }, { $$type: "Deploy", queryId: 0n }); // Deploy
     await system.run(); // Execute
@@ -699,7 +699,7 @@ describe("contract", () => {
     let buyer = system.treasure("buyer"); // Creates wallet (seller)
     let dispute_resolver = system.treasure("budispute_resolveryer"); // Creates wallet (disputer)
     let unknown = system.treasure("unknown"); // Creates wallet (unknown)
-    let contract = system.open(await JobContract.fromInit(seller.address, buyer.address, dispute_resolver.address)); // Open contract - using contract 
+    let contract = system.open(await JobContract.fromInit(seller.address, buyer.address, dispute_resolver.address, 250n)); // Open contract - using contract 
     
     await contract.send(seller, { value: toNano(1) }, { $$type: "Deploy", queryId: 0n }); // Deploy
     await system.run(); // Execute

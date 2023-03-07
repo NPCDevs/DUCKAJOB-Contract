@@ -29,7 +29,7 @@ contract JobContract with Deployable {
     contract_price: Int as uint32;
 
 
-    init(seller: Address, buyer: Address, dispute_resolver: Address) {
+    init(seller: Address, buyer: Address, dispute_resolver: Address, contract_price: Int) {
         self.seller = seller;
         self.buyer = buyer;
         self.dispute_resolver = dispute_resolver;
@@ -41,7 +41,7 @@ contract JobContract with Deployable {
         self.max_time_to_deposit = 259200;
         self.max_time_to_complete = 259200;
         self.max_time_to_review = 259200;
-        self.contract_price = 250;
+        self.contract_price = contract_price;
         
     }
 

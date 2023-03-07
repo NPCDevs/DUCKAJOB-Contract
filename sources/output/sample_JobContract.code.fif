@@ -202,6 +202,14 @@ PROGRAM{
     __tact_load_address INLINECALLDICT
     SWAP
     __tact_load_address INLINECALLDICT
+    SWAP
+    LDREF
+    SWAP
+    CTOS
+    257 PUSHINT
+    LDIX
+    DROP
+    s1 s4 XCHG
     s3 s3 s0 XCHG3
   }>
   $__gen_JobContract_init PROCREF:<{
@@ -210,7 +218,7 @@ PROGRAM{
     s1 s1 s1 PUSH3
     259200 PUSHINT
     s0 s0 PUSH2
-    250 PUSHINT
+    8 ROLL
   }>
   __gen_load_JobContract PROCINLINE:<{
     c4 PUSH
@@ -225,9 +233,9 @@ PROGRAM{
       1 12 BLKDROP2
     }>ELSE<{
       __gen_read_$init$JobContract INLINECALLDICT
-      s0 s3 XCHG
+      s0 s4 XCHG
       ENDS
-      ROT
+      3 ROLL
       $__gen_JobContract_init INLINECALLDICT
     }>
   }>

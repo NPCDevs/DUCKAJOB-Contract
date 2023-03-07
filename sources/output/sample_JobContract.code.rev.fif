@@ -69,17 +69,25 @@ SETCP0
       s0 s1 XCHG
       LDMSGADDR
       s0 s1 XCHG
+      s0 s1 XCHG
+      LDREF
+      s0 s1 XCHG
+      CTOS
+      257 PUSHINT
+      LDI
+      s0 POP
+      s1 s4 XCHG
       s3 s3 s0 XCHG3
-      s0 s3 XCHG
+      s0 s4 XCHG
       ENDS
-      ROT
+      1 3 BLKSWAP
       <{
         0 PUSHINT
         NOW
         1 1 1 PUSH3
         259200 PUSHINT
         s0 s0 PUSH2
-        250 PUSHINT
+        1 8 BLKSWAP
       }> CALLREF
     }> PUSHCONT
     IFELSE
@@ -1318,17 +1326,25 @@ SETCP0
       s0 s1 XCHG
       LDMSGADDR
       s0 s1 XCHG
+      s0 s1 XCHG
+      LDREF
+      s0 s1 XCHG
+      CTOS
+      257 PUSHINT
+      LDI
+      s0 POP
+      s1 s4 XCHG
       s3 s3 s0 XCHG3
-      s0 s3 XCHG
+      s0 s4 XCHG
       ENDS
-      ROT
+      1 3 BLKSWAP
       <{
         0 PUSHINT
         NOW
         1 1 1 PUSH3
         259200 PUSHINT
         s0 s0 PUSH2
-        250 PUSHINT
+        1 8 BLKSWAP
       }> CALLREF
     }> PUSHCONT
     IFELSE
@@ -1386,17 +1402,25 @@ SETCP0
       s0 s1 XCHG
       LDMSGADDR
       s0 s1 XCHG
+      s0 s1 XCHG
+      LDREF
+      s0 s1 XCHG
+      CTOS
+      257 PUSHINT
+      LDI
+      s0 POP
+      s1 s4 XCHG
       s3 s3 s0 XCHG3
-      s0 s3 XCHG
+      s0 s4 XCHG
       ENDS
-      ROT
+      1 3 BLKSWAP
       <{
         0 PUSHINT
         NOW
         1 1 1 PUSH3
         259200 PUSHINT
         s0 s0 PUSH2
-        250 PUSHINT
+        1 8 BLKSWAP
       }> CALLREF
     }> PUSHCONT
     IFELSE
@@ -1454,17 +1478,25 @@ SETCP0
       s0 s1 XCHG
       LDMSGADDR
       s0 s1 XCHG
+      s0 s1 XCHG
+      LDREF
+      s0 s1 XCHG
+      CTOS
+      257 PUSHINT
+      LDI
+      s0 POP
+      s1 s4 XCHG
       s3 s3 s0 XCHG3
-      s0 s3 XCHG
+      s0 s4 XCHG
       ENDS
-      ROT
+      1 3 BLKSWAP
       <{
         0 PUSHINT
         NOW
         1 1 1 PUSH3
         259200 PUSHINT
         s0 s0 PUSH2
-        250 PUSHINT
+        1 8 BLKSWAP
       }> CALLREF
     }> PUSHCONT
     IFELSE
@@ -1522,17 +1554,25 @@ SETCP0
       s0 s1 XCHG
       LDMSGADDR
       s0 s1 XCHG
+      s0 s1 XCHG
+      LDREF
+      s0 s1 XCHG
+      CTOS
+      257 PUSHINT
+      LDI
+      s0 POP
+      s1 s4 XCHG
       s3 s3 s0 XCHG3
-      s0 s3 XCHG
+      s0 s4 XCHG
       ENDS
-      ROT
+      1 3 BLKSWAP
       <{
         0 PUSHINT
         NOW
         1 1 1 PUSH3
         259200 PUSHINT
         s0 s0 PUSH2
-        250 PUSHINT
+        1 8 BLKSWAP
       }> CALLREF
     }> PUSHCONT
     IFELSE
@@ -1590,17 +1630,25 @@ SETCP0
       s0 s1 XCHG
       LDMSGADDR
       s0 s1 XCHG
+      s0 s1 XCHG
+      LDREF
+      s0 s1 XCHG
+      CTOS
+      257 PUSHINT
+      LDI
+      s0 POP
+      s1 s4 XCHG
       s3 s3 s0 XCHG3
-      s0 s3 XCHG
+      s0 s4 XCHG
       ENDS
-      ROT
+      1 3 BLKSWAP
       <{
         0 PUSHINT
         NOW
         1 1 1 PUSH3
         259200 PUSHINT
         s0 s0 PUSH2
-        250 PUSHINT
+        1 8 BLKSWAP
       }> CALLREF
     }> PUSHCONT
     IFELSE
@@ -1658,17 +1706,25 @@ SETCP0
       s0 s1 XCHG
       LDMSGADDR
       s0 s1 XCHG
+      s0 s1 XCHG
+      LDREF
+      s0 s1 XCHG
+      CTOS
+      257 PUSHINT
+      LDI
+      s0 POP
+      s1 s4 XCHG
       s3 s3 s0 XCHG3
-      s0 s3 XCHG
+      s0 s4 XCHG
       ENDS
-      ROT
+      1 3 BLKSWAP
       <{
         0 PUSHINT
         NOW
         1 1 1 PUSH3
         259200 PUSHINT
         s0 s0 PUSH2
-        250 PUSHINT
+        1 8 BLKSWAP
       }> CALLREF
     }> PUSHCONT
     IFELSE
@@ -1731,17 +1787,25 @@ SETCP0
       s0 s1 XCHG
       LDMSGADDR
       s0 s1 XCHG
+      s0 s1 XCHG
+      LDREF
+      s0 s1 XCHG
+      CTOS
+      257 PUSHINT
+      LDI
+      s0 POP
+      s1 s4 XCHG
       s3 s3 s0 XCHG3
-      s0 s3 XCHG
+      s0 s4 XCHG
       ENDS
-      ROT
+      1 3 BLKSWAP
       <{
         0 PUSHINT
         NOW
         1 1 1 PUSH3
         259200 PUSHINT
         s0 s0 PUSH2
-        250 PUSHINT
+        1 8 BLKSWAP
       }> CALLREF
     }> PUSHCONT
     IFELSE
@@ -1799,17 +1863,25 @@ SETCP0
       s0 s1 XCHG
       LDMSGADDR
       s0 s1 XCHG
+      s0 s1 XCHG
+      LDREF
+      s0 s1 XCHG
+      CTOS
+      257 PUSHINT
+      LDI
+      s0 POP
+      s1 s4 XCHG
       s3 s3 s0 XCHG3
-      s0 s3 XCHG
+      s0 s4 XCHG
       ENDS
-      ROT
+      1 3 BLKSWAP
       <{
         0 PUSHINT
         NOW
         1 1 1 PUSH3
         259200 PUSHINT
         s0 s0 PUSH2
-        250 PUSHINT
+        1 8 BLKSWAP
       }> CALLREF
     }> PUSHCONT
     IFELSE
