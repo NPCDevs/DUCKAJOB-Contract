@@ -1,0 +1,826 @@
+PROGRAM{
+  DECLPROC __tact_not_null
+  DECLPROC __tact_context_get
+  DECLPROC __tact_verify_address
+  DECLPROC __tact_store_bool
+  DECLPROC __tact_load_address
+  DECLPROC __tact_store_address
+  DECLPROC __tact_address_eq
+  DECLPROC __gen_read_Deploy
+  DECLPROC __gen_write_DeployOk
+  DECLPROC __gen_writecell_DeployOk
+  DECLPROC __gen_read_Fund_Project
+  DECLPROC __gen_read_Update_Status
+  DECLPROC __gen_read_Dispute_Resolve
+  DECLPROC __gen_write_JobContract
+  DECLPROC __gen_read_JobContract
+  DECLPROC __gen_read_$init$JobContract
+  DECLPROC $__gen_JobContract_init
+  DECLPROC __gen_load_JobContract
+  DECLPROC __gen_store_JobContract
+  DECLPROC $send
+  DECLPROC __gen_constructor_SendParameters$bounce_to_value_mode_body
+  DECLPROC $reply
+  DECLPROC $__gen_JobContract_fund_Project
+  DECLPROC $__gen_JobContract_seller_delivered
+  DECLPROC __gen_constructor_SendParameters$to_value_mode_bounce
+  DECLPROC $__gen_JobContract_buyer_accept
+  DECLPROC $__gen_JobContract_buyer_dispute
+  DECLPROC $__gen_JobContract_dispute_resolve
+  DECLPROC $__gen_JobContract_seller_not_delivered
+  DECLPROC $__gen_JobContract_buyer_not_reviewed
+  DECLPROC $__gen_JobContract_update_Status
+  DECLPROC $__gen_JobContract_Funds
+  76717 DECLMETHOD $__gen_get_Funds
+  DECLPROC $__gen_JobContract_DeployedTime
+  109008 DECLMETHOD $__gen_get_DeployedTime
+  DECLPROC $__gen_JobContract_DepositTime
+  83848 DECLMETHOD $__gen_get_DepositTime
+  DECLPROC $__gen_JobContract_ContractStatus
+  127792 DECLMETHOD $__gen_get_ContractStatus
+  DECLPROC $__gen_JobContract_MaxTimeToDeposit
+  115496 DECLMETHOD $__gen_get_MaxTimeToDeposit
+  DECLPROC $__gen_JobContract_MaxTimeToComplete
+  83510 DECLMETHOD $__gen_get_MaxTimeToComplete
+  DECLPROC $__gen_JobContract_MaxTimeToReview
+  67120 DECLMETHOD $__gen_get_MaxTimeToReview
+  DECLPROC $__gen_JobContract_DeliveryTime
+  89020 DECLMETHOD $__gen_get_DeliveryTime
+  DECLPROC $__gen_JobContract_receive_Fund_Project
+  DECLPROC $__gen_JobContract_receive_Update_Status
+  DECLPROC $__gen_JobContract_receive_Dispute_Resolve
+  DECLPROC $__gen_JobContract_receive_comment_b1a3537d6841749a86c8d3c64f1460bb9ce2403c6252ac8c7959df438fc2652b
+  DECLPROC $__gen_JobContract_receive_comment_f33be2133cdf414556490ef94d31e3d7716b6596e0be2b9831558a9b37671f9b
+  DECLPROC $__gen_JobContract_receive_comment_21a8cc46f587c521b6433ad5983eab0f02ba1a9c1de28c81fead6c062db93779
+  DECLPROC $__gen_JobContract_receive_comment_fa588efd33bf957f0cacc9aa6937e213b8b9ab11cf8de3e6a06589b21c912d2a
+  DECLPROC $__gen_JobContract_receive_comment_9ca66ec43b3f48d2995246fbd1d758b12183efaf78b2ff9b9b6e31b249200c0a
+  DECLPROC __gen_constructor_DeployOk$queryId
+  DECLPROC $__gen_JobContract_receive_Deploy
+  DECLPROC __gen_router_JobContract
+  DECLPROC recv_internal
+  113617 DECLMETHOD supported_interfaces
+  DECLPROC get_abi_ipfs
+  DECLPROC lazy_deployment_completed
+  DECLGLOBVAR __tact_context
+  DECLGLOBVAR __tact_context_sys
+  __tact_not_null PROCINLINE:<{
+    DUP
+    ISNULL
+    128 THROWIF
+  }>
+  __tact_context_get PROCINLINE:<{
+    __tact_context GETGLOB
+    4 UNTUPLE
+  }>
+  __tact_verify_address PROCINLINE:<{
+    SBITS
+    267 PUSHINT
+    NEQ
+    136 THROWIFNOT
+  }>
+  __tact_store_bool PROCINLINE:<{
+    SWAP
+    1 STI
+  }>
+  __tact_load_address PROCINLINE:<{
+    LDMSGADDR
+    SWAP
+  }>
+  __tact_store_address PROCINLINE:<{
+    STSLICER
+  }>
+  __tact_address_eq PROCINLINE:<{
+    SDEQ
+  }>
+  __gen_read_Deploy PROCINLINE:<{
+    32 LDU
+    SWAP
+    2490013878 PUSHINT
+    EQUAL
+    129 THROWIFNOT
+    64 LDU
+    SWAP
+  }>
+  __gen_write_DeployOk PROCINLINE:<{
+    2952335191 PUSHINT
+    ROT
+    32 STU
+    64 STU
+  }>
+  __gen_writecell_DeployOk PROCINLINE:<{
+    NEWC
+    SWAP
+    __gen_write_DeployOk INLINECALLDICT
+    ENDC
+  }>
+  __gen_read_Fund_Project PROCINLINE:<{
+    32 LDU
+    SWAP
+    1143817326 PUSHINT
+    EQUAL
+    129 THROWIFNOT
+    32 LDU
+    SWAP
+  }>
+  __gen_read_Update_Status PROCINLINE:<{
+    32 LDU
+    SWAP
+    838918299 PUSHINT
+    EQUAL
+    129 THROWIFNOT
+    32 LDU
+    SWAP
+  }>
+  __gen_read_Dispute_Resolve PROCINLINE:<{
+    32 LDU
+    SWAP
+    2089403455 PUSHINT
+    EQUAL
+    129 THROWIFNOT
+    __tact_load_address INLINECALLDICT
+  }>
+  __gen_write_JobContract PROCINLINE:<{
+    s12 s11 XCHG2
+    __tact_store_address INLINECALLDICT
+    s0 s9 XCHG2
+    __tact_store_address INLINECALLDICT
+    s0 s7 XCHG2
+    __tact_store_address INLINECALLDICT
+    s1 s5 XCHG
+    32 STU
+    s1 s3 XCHG
+    64 STU
+    64 STU
+    SWAP
+    NEWC
+    64 STU
+    s1 s2 XCHG
+    257 PUSHINT
+    STIX
+    s1 s2 XCHG
+    64 STU
+    s1 s2 XCHG
+    64 STU
+    s1 s3 XCHG
+    64 STU
+    32 STU
+    ENDC
+    SWAP
+    STREF
+  }>
+  __gen_read_JobContract PROCINLINE:<{
+    __tact_load_address INLINECALLDICT
+    SWAP
+    __tact_load_address INLINECALLDICT
+    SWAP
+    __tact_load_address INLINECALLDICT
+    SWAP
+    32 LDU
+    64 LDU
+    64 LDU
+    LDREF
+    SWAP
+    CTOS
+    64 LDU
+    257 PUSHINT
+    LDIX
+    64 LDU
+    64 LDU
+    64 LDU
+    32 LDU
+    DROP
+    s6 s12 XCHG
+    s6 s11 XCHG
+    s6 s10 XCHG
+    s6 s9 XCHG
+    s6 s8 XCHG
+    s6 s7 XCHG
+  }>
+  __gen_read_$init$JobContract PROCINLINE:<{
+    __tact_load_address INLINECALLDICT
+    SWAP
+    __tact_load_address INLINECALLDICT
+    SWAP
+    __tact_load_address INLINECALLDICT
+    s3 s3 s0 XCHG3
+  }>
+  $__gen_JobContract_init PROCREF:<{
+    0 PUSHINT
+    NOW
+    s1 s1 s1 PUSH3
+    259200 PUSHINT
+    s0 s0 PUSH2
+    250 PUSHINT
+  }>
+  __gen_load_JobContract PROCINLINE:<{
+    c4 PUSH
+    CTOS
+    LDREF
+    SWAP
+    __tact_context_sys SETGLOB
+    1 LDI
+    SWAP
+    IF:<{
+      __gen_read_JobContract INLINECALLDICT
+      1 12 BLKDROP2
+    }>ELSE<{
+      __gen_read_$init$JobContract INLINECALLDICT
+      s0 s3 XCHG
+      ENDS
+      ROT
+      $__gen_JobContract_init INLINECALLDICT
+    }>
+  }>
+  __gen_store_JobContract PROCINLINE:<{
+    NEWC
+    __tact_context_sys GETGLOB
+    SWAP
+    STREF
+    TRUE
+    SWAP
+    1 STI
+    12 -ROLL
+    __gen_write_JobContract INLINECALLDICT
+    ENDC
+    c4 POP
+  }>
+  $send PROCREF:<{
+    NEWC
+    1 PUSHINT
+    SWAP
+    2 STI
+    s0 s7 XCHG2
+    __tact_store_bool INLINECALLDICT
+    0 PUSHINT
+    SWAP
+    3 STI
+    s0 s5 XCHG2
+    __tact_store_address INLINECALLDICT
+    s0 s3 XCHG2
+    STGRAMS
+    0 PUSHINT
+    SWAP
+    105 STI
+    s3 PUSH
+    ISNULL
+    NOT
+    s5 PUSH
+    ISNULL
+    NOT
+    OR
+    IF:<{
+      TRUE
+      __tact_store_bool INLINECALLDICT
+      NEWC
+      FALSE
+      __tact_store_bool INLINECALLDICT
+      FALSE
+      __tact_store_bool INLINECALLDICT
+      s4 PUSH
+      ISNULL
+      NOT
+      IF:<{
+        TRUE
+        __tact_store_bool INLINECALLDICT
+        s0 s4 XCHG
+        __tact_not_null INLINECALLDICT
+        s0 s4 XCHG2
+        STREF
+      }>ELSE<{
+        s4 POP
+        s0 s3 XCHG
+        FALSE
+        __tact_store_bool INLINECALLDICT
+      }>
+      s4 PUSH
+      ISNULL
+      NOT
+      IF:<{
+        TRUE
+        __tact_store_bool INLINECALLDICT
+        s0 s4 XCHG
+        __tact_not_null INLINECALLDICT
+        s0 s4 XCHG2
+        STREF
+      }>ELSE<{
+        s4 POP
+        s0 s3 XCHG
+        FALSE
+        __tact_store_bool INLINECALLDICT
+      }>
+      FALSE
+      __tact_store_bool INLINECALLDICT
+      s0 s2 XCHG
+      TRUE
+      __tact_store_bool INLINECALLDICT
+      s0 s2 XCHG
+      ENDC
+      ROT
+      STREF
+    }>ELSE<{
+      s3 POP
+      s3 POP
+      SWAP
+      FALSE
+      __tact_store_bool INLINECALLDICT
+    }>
+    OVER
+    ISNULL
+    NOT
+    IF:<{
+      TRUE
+      __tact_store_bool INLINECALLDICT
+      SWAP
+      __tact_not_null INLINECALLDICT
+      SWAP
+      STREF
+    }>ELSE<{
+      NIP
+      FALSE
+      __tact_store_bool INLINECALLDICT
+    }>
+    ENDC
+    SWAP
+    SENDRAWMSG
+  }>
+  __gen_constructor_SendParameters$bounce_to_value_mode_body PROCINLINE:<{
+    PUSHNULL
+    PUSHNULL
+  }>
+  $reply PROCREF:<{
+    __tact_context_get INLINECALLDICT
+    s2 s3 XCHG
+    3 BLKDROP
+    TRUE
+    0 PUSHINT
+    s0 s3 XCHG2
+    66 PUSHINT
+    SWAP
+    __gen_constructor_SendParameters$bounce_to_value_mode_body INLINECALLDICT
+    $send INLINECALLDICT
+  }>
+  $__gen_JobContract_fund_Project PROCREF:<{
+    s7 POP
+    32991 PUSHINT
+    s0 s5 XCHG
+    0 EQINT
+    s1 s5 XCHG
+    THROWANYIFNOT
+    7872 PUSHINT
+    NOW
+    s8 s4 PUSH2
+    ADD
+    LEQ
+    THROWANYIFNOT
+    57710 PUSHINT
+    s6 s4 PUSH2
+    EQUAL
+    THROWANYIFNOT
+    s7 s5 XCHG2
+    ADD
+    NOW
+    s7 s5 XCHG2
+    1 PUSHINT
+    s0 s4 XCHG
+  }>
+  $__gen_JobContract_seller_delivered PROCREF:<{
+    s5 POP
+    __tact_context_get INLINECALLDICT
+    s2 s3 XCHG
+    3 BLKDROP
+    49940 PUSHINT
+    s0 s5 XCHG
+    1 EQINT
+    s1 s5 XCHG
+    THROWANYIFNOT
+    s10 PUSH
+    3234 PUSHINT
+    s0 s5 XCHG
+    __tact_address_eq INLINECALLDICT
+    s1 s4 XCHG
+    THROWANYIFNOT
+    22641 PUSHINT
+    NOW
+    s6 s2 PUSH2
+    ADD
+    LEQ
+    THROWANYIFNOT
+    NOW
+    s0 s4 XCHG
+    2 PUSHINT
+    s4 s4 XCHG2
+  }>
+  __gen_constructor_SendParameters$to_value_mode_bounce PROCINLINE:<{
+    3 -ROLL
+    PUSHNULL
+    PUSHNULL
+    PUSHNULL
+  }>
+  $__gen_JobContract_buyer_accept PROCREF:<{
+    __tact_context_get INLINECALLDICT
+    s2 s3 XCHG
+    3 BLKDROP
+    38848 PUSHINT
+    s0 s6 XCHG
+    2 EQINT
+    s1 s6 XCHG
+    THROWANYIFNOT
+    s10 PUSH
+    22025 PUSHINT
+    s0 s6 XCHG
+    __tact_address_eq INLINECALLDICT
+    s1 s5 XCHG
+    THROWANYIFNOT
+    57500 PUSHINT
+    NOW
+    s6 s2 PUSH2
+    ADD
+    LEQ
+    THROWANYIFNOT
+    s10 PUSH
+    500000000 PUSHINT
+    2 PUSHINT
+    TRUE
+    __gen_constructor_SendParameters$to_value_mode_bounce INLINECALLDICT
+    $send INLINECALLDICT
+    3 PUSHINT
+    s0 s4 XCHG
+  }>
+  $__gen_JobContract_buyer_dispute PROCREF:<{
+    __tact_context_get INLINECALLDICT
+    s2 s3 XCHG
+    3 BLKDROP
+    38848 PUSHINT
+    s0 s6 XCHG
+    2 EQINT
+    s1 s6 XCHG
+    THROWANYIFNOT
+    s10 PUSH
+    52504 PUSHINT
+    s0 s6 XCHG
+    __tact_address_eq INLINECALLDICT
+    s1 s5 XCHG
+    THROWANYIFNOT
+    37959 PUSHINT
+    NOW
+    s6 s2 PUSH2
+    ADD
+    LEQ
+    THROWANYIFNOT
+    4 PUSHINT
+    s0 s4 XCHG
+  }>
+  $__gen_JobContract_dispute_resolve PROCREF:<{
+    __tact_context_get INLINECALLDICT
+    s2 s3 XCHG
+    3 BLKDROP
+    3956 PUSHINT
+    s7 PUSH
+    4 EQINT
+    THROWANYIFNOT
+    s11 PUSH
+    39030 PUSHINT
+    s0 s2 XCHG
+    __tact_address_eq INLINECALLDICT
+    THROWANYIFNOT
+    s0 s12 PUSH2
+    __tact_address_eq INLINECALLDICT
+    IF:<{
+      DROP
+      s4 POP
+      s10 PUSH
+      500000000 PUSHINT
+      2 PUSHINT
+      TRUE
+      __gen_constructor_SendParameters$to_value_mode_bounce INLINECALLDICT
+      $send INLINECALLDICT
+      6 PUSHINT
+    }>ELSE<{
+      s11 PUSH
+      __tact_address_eq INLINECALLDICT
+      IF:<{
+        s4 POP
+        s9 PUSH
+        500000000 PUSHINT
+        2 PUSHINT
+        TRUE
+        __gen_constructor_SendParameters$to_value_mode_bounce INLINECALLDICT
+        $send INLINECALLDICT
+        6 PUSHINT
+        s0 s4 XCHG
+      }>
+      s0 s4 XCHG
+    }>
+    s0 s4 XCHG
+  }>
+  $__gen_JobContract_seller_not_delivered PROCREF:<{
+    __tact_context_get INLINECALLDICT
+    s2 s3 XCHG
+    3 BLKDROP
+    18044 PUSHINT
+    s0 s6 XCHG
+    1 EQINT
+    s1 s6 XCHG
+    THROWANYIFNOT
+    s10 PUSH
+    49548 PUSHINT
+    s0 s6 XCHG
+    __tact_address_eq INLINECALLDICT
+    s1 s5 XCHG
+    THROWANYIFNOT
+    3028 PUSHINT
+    NOW
+    s7 s3 PUSH2
+    ADD
+    GEQ
+    THROWANYIFNOT
+    s9 PUSH
+    500000000 PUSHINT
+    2 PUSHINT
+    TRUE
+    __gen_constructor_SendParameters$to_value_mode_bounce INLINECALLDICT
+    $send INLINECALLDICT
+    5 PUSHINT
+    s0 s4 XCHG
+  }>
+  $__gen_JobContract_buyer_not_reviewed PROCREF:<{
+    __tact_context_get INLINECALLDICT
+    s2 s3 XCHG
+    3 BLKDROP
+    27088 PUSHINT
+    s0 s6 XCHG
+    2 EQINT
+    s1 s6 XCHG
+    THROWANYIFNOT
+    s11 PUSH
+    3546 PUSHINT
+    s0 s6 XCHG
+    __tact_address_eq INLINECALLDICT
+    s1 s5 XCHG
+    THROWANYIFNOT
+    18675 PUSHINT
+    NOW
+    s6 s2 PUSH2
+    ADD
+    GEQ
+    THROWANYIFNOT
+    s10 PUSH
+    500000000 PUSHINT
+    2 PUSHINT
+    TRUE
+    __gen_constructor_SendParameters$to_value_mode_bounce INLINECALLDICT
+    $send INLINECALLDICT
+    5 PUSHINT
+    s0 s4 XCHG
+  }>
+  $__gen_JobContract_update_Status PROCREF:<{
+    s5 POP
+    27002 PUSHINT
+    s5 PUSH
+    7 LESSINT
+    THROWANYIFNOT
+  }>
+  $__gen_JobContract_Funds PROCREF:<{
+    s8 s11 XCHG
+    11 BLKDROP
+  }>
+  $__gen_get_Funds PROC:<{
+    __gen_load_JobContract INLINECALLDICT
+    $__gen_JobContract_Funds INLINECALLDICT
+  }>
+  $__gen_JobContract_DeployedTime PROCREF:<{
+    s7 s11 XCHG
+    11 BLKDROP
+  }>
+  $__gen_get_DeployedTime PROC:<{
+    __gen_load_JobContract INLINECALLDICT
+    $__gen_JobContract_DeployedTime INLINECALLDICT
+  }>
+  $__gen_JobContract_DepositTime PROCREF:<{
+    s6 s11 XCHG
+    11 BLKDROP
+  }>
+  $__gen_get_DepositTime PROC:<{
+    __gen_load_JobContract INLINECALLDICT
+    $__gen_JobContract_DepositTime INLINECALLDICT
+  }>
+  $__gen_JobContract_ContractStatus PROCREF:<{
+    s4 s11 XCHG
+    11 BLKDROP
+  }>
+  $__gen_get_ContractStatus PROC:<{
+    __gen_load_JobContract INLINECALLDICT
+    $__gen_JobContract_ContractStatus INLINECALLDICT
+  }>
+  $__gen_JobContract_MaxTimeToDeposit PROCREF:<{
+    s3 s11 XCHG
+    11 BLKDROP
+  }>
+  $__gen_get_MaxTimeToDeposit PROC:<{
+    __gen_load_JobContract INLINECALLDICT
+    $__gen_JobContract_MaxTimeToDeposit INLINECALLDICT
+  }>
+  $__gen_JobContract_MaxTimeToComplete PROCREF:<{
+    s2 s11 XCHG
+    11 BLKDROP
+  }>
+  $__gen_get_MaxTimeToComplete PROC:<{
+    __gen_load_JobContract INLINECALLDICT
+    $__gen_JobContract_MaxTimeToComplete INLINECALLDICT
+  }>
+  $__gen_JobContract_MaxTimeToReview PROCREF:<{
+    s1 s11 XCHG
+    11 BLKDROP
+  }>
+  $__gen_get_MaxTimeToReview PROC:<{
+    __gen_load_JobContract INLINECALLDICT
+    $__gen_JobContract_MaxTimeToReview INLINECALLDICT
+  }>
+  $__gen_JobContract_DeliveryTime PROCREF:<{
+    s5 s11 XCHG
+    11 BLKDROP
+  }>
+  $__gen_get_DeliveryTime PROC:<{
+    __gen_load_JobContract INLINECALLDICT
+    $__gen_JobContract_DeliveryTime INLINECALLDICT
+  }>
+  $__gen_JobContract_receive_Fund_Project PROCINLINE:<{
+    $__gen_JobContract_fund_Project INLINECALLDICT
+  }>
+  $__gen_JobContract_receive_Update_Status PROCINLINE:<{
+    $__gen_JobContract_update_Status INLINECALLDICT
+  }>
+  $__gen_JobContract_receive_Dispute_Resolve PROCINLINE:<{
+    $__gen_JobContract_dispute_resolve INLINECALLDICT
+  }>
+  $__gen_JobContract_receive_comment_b1a3537d6841749a86c8d3c64f1460bb9ce2403c6252ac8c7959df438fc2652b PROCINLINE:<{
+    $__gen_JobContract_seller_delivered INLINECALLDICT
+  }>
+  $__gen_JobContract_receive_comment_f33be2133cdf414556490ef94d31e3d7716b6596e0be2b9831558a9b37671f9b PROCINLINE:<{
+    $__gen_JobContract_buyer_accept INLINECALLDICT
+  }>
+  $__gen_JobContract_receive_comment_21a8cc46f587c521b6433ad5983eab0f02ba1a9c1de28c81fead6c062db93779 PROCINLINE:<{
+    $__gen_JobContract_buyer_dispute INLINECALLDICT
+  }>
+  $__gen_JobContract_receive_comment_fa588efd33bf957f0cacc9aa6937e213b8b9ab11cf8de3e6a06589b21c912d2a PROCINLINE:<{
+    $__gen_JobContract_seller_not_delivered INLINECALLDICT
+  }>
+  $__gen_JobContract_receive_comment_9ca66ec43b3f48d2995246fbd1d758b12183efaf78b2ff9b9b6e31b249200c0a PROCINLINE:<{
+    $__gen_JobContract_buyer_not_reviewed INLINECALLDICT
+  }>
+  __gen_constructor_DeployOk$queryId PROCINLINE:<{
+  }>
+  $__gen_JobContract_receive_Deploy PROCINLINE:<{
+    __gen_constructor_DeployOk$queryId INLINECALLDICT
+    __gen_writecell_DeployOk INLINECALLDICT
+    $reply INLINECALLDICT
+  }>
+  __gen_router_JobContract PROCREF:<{
+    c2 SAVE
+    SAMEALTSAVE
+    0 PUSHINT
+    OVER
+    SBITS
+    31 GTINT
+    IF:<{
+      DROP
+      DUP
+      32 PLDU
+    }>
+    s0 s2 XCHG
+    IFJMP:<{
+      2DROP
+      TRUE
+    }>
+    OVER
+    1143817326 PUSHINT
+    EQUAL
+    IFJMP:<{
+      NIP
+      __gen_read_Fund_Project INLINECALLDICT
+      NIP
+      $__gen_JobContract_receive_Fund_Project INLINECALLDICT
+      TRUE
+    }>
+    OVER
+    838918299 PUSHINT
+    EQUAL
+    IFJMP:<{
+      NIP
+      __gen_read_Update_Status INLINECALLDICT
+      NIP
+      $__gen_JobContract_receive_Update_Status INLINECALLDICT
+      TRUE
+    }>
+    OVER
+    2089403455 PUSHINT
+    EQUAL
+    IFJMP:<{
+      NIP
+      __gen_read_Dispute_Resolve INLINECALLDICT
+      NIP
+      $__gen_JobContract_receive_Dispute_Resolve INLINECALLDICT
+      TRUE
+    }>
+    OVER
+    2490013878 PUSHINT
+    EQUAL
+    IFJMP:<{
+      NIP
+      __gen_read_Deploy INLINECALLDICT
+      NIP
+      $__gen_JobContract_receive_Deploy INLINECALLDICT
+      TRUE
+    }>
+    SWAP
+    0 EQINT
+    IF:<{
+      HASHSU
+      DUP
+      80347946496716549555802909439765488297494205698806487183815519820490127598891 PUSHINT
+      EQUAL
+      IFJMP:<{
+        DROP
+        $__gen_JobContract_receive_comment_b1a3537d6841749a86c8d3c64f1460bb9ce2403c6252ac8c7959df438fc2652b INLINECALLDICT
+        TRUE
+        RETALT
+      }>
+      DUP
+      110017826495879597658833998324544717061345217546808775994776202580586085687195 PUSHINT
+      EQUAL
+      IFJMP:<{
+        DROP
+        $__gen_JobContract_receive_comment_f33be2133cdf414556490ef94d31e3d7716b6596e0be2b9831558a9b37671f9b INLINECALLDICT
+        TRUE
+        RETALT
+      }>
+      DUP
+      15224564179438935375261357669669508752998877399857293307681341352431081568121 PUSHINT
+      EQUAL
+      IFJMP:<{
+        DROP
+        $__gen_JobContract_receive_comment_21a8cc46f587c521b6433ad5983eab0f02ba1a9c1de28c81fead6c062db93779 INLINECALLDICT
+        TRUE
+        RETALT
+      }>
+      DUP
+      113234681561814585912483862030460432223000077508779386937004252577251019795754 PUSHINT
+      EQUAL
+      IFJMP:<{
+        DROP
+        $__gen_JobContract_receive_comment_fa588efd33bf957f0cacc9aa6937e213b8b9ab11cf8de3e6a06589b21c912d2a INLINECALLDICT
+        TRUE
+        RETALT
+      }>
+      70854865474229921035204077723347096678082205892689651003163581600347560348682 PUSHINT
+      EQUAL
+      IFJMP:<{
+        $__gen_JobContract_receive_comment_9ca66ec43b3f48d2995246fbd1d758b12183efaf78b2ff9b9b6e31b249200c0a INLINECALLDICT
+        TRUE
+        RETALT
+      }>
+    }>ELSE<{
+      DROP
+    }>
+    FALSE
+  }>
+  recv_internal PROC:<{
+    SWAP
+    CTOS
+    4 LDU
+    SWAP
+    1 PUSHINT
+    AND
+    1 EQINT
+    IF:<{
+      TRUE
+    }>ELSE<{
+      FALSE
+    }>
+    SWAP
+    LDMSGADDR
+    s2 PUSH
+    s5 s5 XCHG2
+    4 TUPLE
+    __tact_context SETGLOB
+    __gen_load_JobContract INLINECALLDICT
+    2 12 BLKSWAP
+    __gen_router_JobContract INLINECALLDICT
+    DROP
+    __gen_store_JobContract INLINECALLDICT
+  }>
+  supported_interfaces PROC:<{
+    123515602279859691144772641439386770278 PUSHINT
+    209801025412363888721030803524359905849 PUSHINT
+    42980537499636128163026532310500881091 PUSHINT
+  }>
+  get_abi_ipfs PROC:<{
+    x{697066733a2f2f516d504c693654633479526237396f7a74317850547a333773525143563238645944515658375879687474555666} PUSHSLICE
+  }>
+  lazy_deployment_completed PROC:<{
+    c4 PUSH
+    CTOS
+    1 LDI
+    SWAP
+  }>
+}END>c
